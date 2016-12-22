@@ -97,7 +97,7 @@ Player.prototype.handleInput = function (key) {
     if (this.y > 500) {
         yay();
         alert("YOU WON!!!!");
-        resetGame();
+        this.resetGame();
     }
 }
 
@@ -128,7 +128,7 @@ var yay = function() {
 }
 
 // this function resets the enemies and player to their original positions. This will be called if the player either wins the game or is hit by an enemy.
-var resetGame = function() {
+Player.prototype.resetGame = function() {
     player.x = 200;
     player.y = 1;
     enemy1.y = 400
@@ -145,7 +145,7 @@ var checkCollisions = function() {
         enemy1.x + enemy1.width > player.x &&
         enemy1.y < player.y + player.height &&
         enemy1.height + enemy1.y > player.y) {
-            resetGame();
+            player.resetGame();
             goodgrief();
     }
     
@@ -153,7 +153,7 @@ var checkCollisions = function() {
         enemy2.x + enemy2.width > player.x &&
         enemy2.y < player.y + player.height &&
         enemy2.height + enemy2.y > player.y) {
-            resetGame();
+            player.resetGame();
             goodgrief();
     }
     
@@ -161,7 +161,7 @@ var checkCollisions = function() {
         enemy3.x + enemy3.width > player.x &&
         enemy3.y < player.y + player.height &&
         enemy3.height + enemy3.y > player.y) {
-            resetGame();
+            player.resetGame();
             goodgrief();
     }
 
