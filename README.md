@@ -1,5 +1,7 @@
-frontend-nanodegree-arcade-game
+Charlie Brown Web Game
 ===============================
+I built this to learn more about web game development. Loved every minute of coding this!
+![I coded this](https://github.com/SethConnell/CharlieBrownWebGame/blob/master/charliebrown.png?raw=true)
 
 # How to run the game:
 
