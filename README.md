@@ -1,5 +1,6 @@
 Charlie Brown Web Game
 ===============================
+[Play Now!](https://sethconnell.github.io/CharlieBrownWebGame/)
 I built this to learn more about web game development. Loved every minute of coding this!
 ![I coded this](https://github.com/SethConnell/CharlieBrownWebGame/blob/master/charliebrown.png?raw=true)
 
